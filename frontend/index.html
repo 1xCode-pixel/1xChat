@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepHelper AI - Мой собственный ИИ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🧠 DeepHelper AI</h1>
+            <p>Мой собственный ИИ-ассистент</p>
+            <div class="status" id="status">🟢 Онлайн</div>
+        </header>
 
+        <div class="chat-container">
+            <div class="messages" id="messages">
+                <div class="message bot-message">
+                    <div class="avatar">🤖</div>
+                    <div class="content">
+                        <strong>DeepHelper:</strong> Привет! Я твой AI-ассистент. Задай мне любой вопрос!
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <div class="typing-indicator" id="typing" style="display: none;">
+                    <span>AI печатает...</span>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="userInput" placeholder="Введите ваше сообщение..." autocomplete="off">
+                    <button id="sendButton">➤</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
